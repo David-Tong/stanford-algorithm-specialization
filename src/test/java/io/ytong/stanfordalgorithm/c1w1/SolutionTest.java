@@ -15,5 +15,11 @@ public class SolutionTest {
 			e.printStackTrace();
 		}
 	}
+	
+	@Test
+	public void testStringCompareTo() {
+		assertTrue("125".compareTo("22") > 0);
+		assertFalse("125".compareTo("222") > 0);
+	}
 
 }
