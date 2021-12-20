@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class SolutionTest {
 	private Solution solution = new Solution();
+	private Solution2 solution2 = new Solution2();
 	
 	@Test
 	public void testMultiply() {
@@ -17,9 +18,9 @@ public class SolutionTest {
 	}
 	
 	@Test
-	public void testStringCompareTo() {
-		assertTrue("125".compareTo("22") > 0);
-		assertFalse("125".compareTo("222") > 0);
+	public void testMultiply2() {
+		assertEquals("408", solution2.multiply("12","34"));
+		assertEquals("42435", solution2.multiply("345","123"));
+		assertEquals("42685751946", solution2.multiply("345698","123477"));
 	}
-
 }
