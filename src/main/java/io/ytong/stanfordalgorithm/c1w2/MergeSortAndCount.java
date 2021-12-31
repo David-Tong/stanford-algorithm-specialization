@@ -1,4 +1,4 @@
-package io.ytong.standfordalgorithm.c1w2;
+package io.ytong.stanfordalgorithm.c1w2;
 
 public class MergeSortAndCount {
 	public long mergeSortAndCountInversions(int[] integers) {

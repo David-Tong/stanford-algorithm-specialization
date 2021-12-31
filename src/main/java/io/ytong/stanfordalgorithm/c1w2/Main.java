@@ -1,4 +1,4 @@
-package io.ytong.standfordalgorithm.c1w2;
+package io.ytong.stanfordalgorithm.c1w2;
 
 public class Main {
 	public static void main(String[] args) {
