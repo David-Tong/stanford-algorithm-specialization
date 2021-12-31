@@ -1,9 +1,9 @@
-package io.ytong.stanfordalgorithm.c1w2;
+package io.ytong.stanfordalgorithm.c1w3;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-import io.ytong.stanfordalgorithm.c1w2.FileReaderHelper;
+import io.ytong.stanfordalgorithm.c1w3.FileReaderHelper;
 
 
 public class FileReaderHelperTest {
@@ -11,7 +11,7 @@ public class FileReaderHelperTest {
 	
 	@Test
 	public void testGetIntegerArrayFromResourceFile() {
-		int[] numbers = helper.getIntegerArrayFromResourceFile("c1w2-assignments.txt");
-		assertEquals(100000, numbers.length);
+		int[] numbers = helper.getIntegerArrayFromResourceFile("c1w3-assignments.txt");
+		assertEquals(10000, numbers.length);
 	}
 }

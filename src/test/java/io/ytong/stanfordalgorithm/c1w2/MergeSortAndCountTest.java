@@ -10,8 +10,8 @@ public class MergeSortAndCountTest {
 	
 	@Test
 	public void testMergeSortAndCountInversions() {
-		int[] integers = {2, 4, 1, 3, 5};
-		long ivrCount = mergeSortAndCount.mergeSortAndCountInversions(integers);
+		int[] numbers = {2, 4, 1, 3, 5};
+		long ivrCount = mergeSortAndCount.mergeSortAndCountInversions(numbers);
 		assertEquals(3, ivrCount);
 	}
 }

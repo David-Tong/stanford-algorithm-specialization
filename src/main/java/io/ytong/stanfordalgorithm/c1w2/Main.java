@@ -5,8 +5,8 @@ public class Main {
 		FileReaderHelper helper = new FileReaderHelper();
 		MergeSortAndCount mergeSortAndCount = new MergeSortAndCount();
 		
-		int[] integers = helper.getIntegerArrayFromResourceFile("IntegerArray.txt");
-		long ivrCount = mergeSortAndCount.mergeSortAndCountInversions(integers);
+		int[] numbers = helper.getIntegerArrayFromResourceFile("c1w2-assignments.txt");
+		long ivrCount = mergeSortAndCount.mergeSortAndCountInversions(numbers);
 		
 		System.out.println("The total inversions number is " + ivrCount);
 	}

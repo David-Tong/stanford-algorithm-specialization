@@ -1,4 +1,4 @@
-package io.ytong.stanfordalgorithm.c1w2;
+package io.ytong.stanfordalgorithm.c1w3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
 public class FileReaderHelper {
-	private int ARRAY_LENGTH = 100000;
+	private int ARRAY_LENGTH = 10000;
 	
 	public int[] getIntegerArrayFromResourceFile(String fileName) {
 		int[] numbers;
