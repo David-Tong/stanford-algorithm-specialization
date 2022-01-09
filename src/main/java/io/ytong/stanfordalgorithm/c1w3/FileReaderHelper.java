@@ -36,8 +36,8 @@ public class FileReaderHelper {
 	private int[] parseResourceFiletoGetIntegerArray(InputStream is) {
 		int[] numbers = new int[ARRAY_LENGTH];
 		try (
-				InputStreamReader streamReader = new InputStreamReader(is, StandardCharsets.UTF_8);
-				BufferedReader reader = new BufferedReader(streamReader)) {
+			InputStreamReader streamReader = new InputStreamReader(is, StandardCharsets.UTF_8);
+			BufferedReader reader = new BufferedReader(streamReader)) {
 			String line;
 			int count = 0;
 			while((line = reader.readLine()) != null) {

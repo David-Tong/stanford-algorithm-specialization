@@ -1,25 +1,18 @@
-package io.ytong.stanfordalgorithm.c1w2;
+package io.ytong.stanfordalgorithm.c1w4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 
-public class FileReaderHelper {
-	private int ARRAY_LENGTH = 100000;
-	
-	public int[] getIntegerArrayFromResourceFile(String fileName) {
-		int[] numbers;
-		
+public class InputHelper {
+	public List<Edge> getEdgeListFromResourceFile(String fileName) {		
 		InputStream is = getFileFromResourceAsStream(fileName);
-		numbers = parseResourceFiletoGetIntegerArray(is);
-		
-		for (int i=0; i<ARRAY_LENGTH; i++) {
-			//System.out.println(integers[i]);
-		}
-		
-		return numbers;
+		List<Edge> edges = parseResourceFiletoGetEdgeList(is);	
+		return edges;
 	}
 
 	private InputStream getFileFromResourceAsStream(String fileName) {
@@ -33,20 +26,21 @@ public class FileReaderHelper {
 		}
 	}
 	
-	private int[] parseResourceFiletoGetIntegerArray(InputStream is) {
-		int[] numbers = new int[ARRAY_LENGTH];
+	private List<Edge> parseResourceFiletoGetEdgeList(InputStream is) {
+		List<Edge> edges = new ArrayList<Edge>();
 		try (
 			InputStreamReader streamReader = new InputStreamReader(is, StandardCharsets.UTF_8);
 			BufferedReader reader = new BufferedReader(streamReader)) {
 			String line;
-			int count = 0;
 			while((line = reader.readLine()) != null) {
-				numbers[count] = Integer.parseInt(line);
-				count++;
+				String[] points = line.split("\t");
+				for (int index=1; index < points.length; index++) {
+					edges.add(new Edge(points[0], points[index]));	
+				}
 			}
 		} catch (IOException e) {
             e.printStackTrace();
         }	
-		return numbers;
+		return edges;
 	}
 }
