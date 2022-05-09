@@ -95,7 +95,7 @@ public class MinCutSolver {
 	}
 	
 	private long getRunTimes() {
-		int vertexsNum = this.vertexs.size();
+		//int vertexsNum = this.vertexs.size();
 		//long runTimes = (long) (vertexsNum * vertexsNum * Math.log(vertexsNum));
 		long runTimes = 2000;
 		return runTimes;

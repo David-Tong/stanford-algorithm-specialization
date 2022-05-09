@@ -3,7 +3,6 @@ package io.ytong.stanfordalgorithm.c1w1;
 import java.math.BigInteger;
 
 public class Main {
-
 	public static void main(String[] args) {
 		Solution2 solution = new Solution2();
 		try {
@@ -19,5 +18,4 @@ public class Main {
 			e.printStackTrace();
 		}
 	}
-
 }
