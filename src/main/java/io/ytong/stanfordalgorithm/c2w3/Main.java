@@ -5,7 +5,6 @@ import java.util.List;
 public class Main {
 	public static void main(String[] args) {
 		String inputFile = "c2w3-assignments.txt";
-		//String inputFile = "test.txt";
 		Helper helper = new Helper(inputFile);
 		List<Integer> numbers = helper.getInputNumbers();
 		

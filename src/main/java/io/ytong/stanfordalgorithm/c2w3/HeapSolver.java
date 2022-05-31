@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 public class HeapSolver {
+	
 	private PriorityQueue<Integer> maxHeap;
 	private PriorityQueue<Integer> minHeap;
 	private List<Integer> numbers;
@@ -71,4 +72,5 @@ public class HeapSolver {
 		long result = sum % 10000;
 		System.out.println(result);
 	}
+	
 }
