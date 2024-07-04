@@ -3,9 +3,6 @@ package io.ytong.stanfordalgorithm.c1w2;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-import io.ytong.stanfordalgorithm.c1w2.FileReaderHelper;
-
-
 public class FileReaderHelperTest {
 	private FileReaderHelper helper = new FileReaderHelper();
 	

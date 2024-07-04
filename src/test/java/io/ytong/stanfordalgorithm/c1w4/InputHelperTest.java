@@ -8,8 +8,6 @@ import java.util.Set;
 
 import org.junit.jupiter.api.Test;
 
-import io.ytong.stanfordalgorithm.c1w4.InputHelper;
-
 public class InputHelperTest {
 private InputHelper helper = new InputHelper();
 	
